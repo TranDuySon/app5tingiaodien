@@ -6,25 +6,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+     android:background="#CCFFFF"
     tools:context="com.example.quan_ly_don_hang.Trangquanly" >
-
-    <Button
-        android:id="@+id/btnCall_Donhang"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="28dp"
-        android:text="Đơn hàng" />
-
-    <Button
-        android:id="@+id/btnCall_Mathang"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/btnCall_Donhang"
-        android:layout_below="@+id/btnCall_Donhang"
-        android:layout_marginTop="21dp"
-        android:text="Mặt hàng" />
 
     <Button
         android:id="@+id/btnCall_CSKH"
@@ -32,15 +15,62 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/btnCall_Mathang"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="95dp"
-        android:text="Chăm sóc khách hàng" />
+        android:layout_marginBottom="42dp"
+        android:background="#FF9900"
+        android:text="Chăm sóc khách hàng"
+        android:textColorLink="#000011"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnCall_Mathang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnCall_Hoadon"
+        android:layout_alignLeft="@+id/btnCall_Donhang"
+        android:layout_marginBottom="42dp"
+        android:background="#FF9900"
+        android:text="Mặt hàng"
+        android:textColorLink="#000011"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btnCall_Hoadon"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/btnCall_CSKH"
         android:layout_alignLeft="@+id/btnCall_CSKH"
-        android:layout_centerVertical="true"
-        android:text="Hóa đơn" />
+        android:layout_marginBottom="42dp"
+        android:background="#FF9900"
+        android:text="Hóa đơn"
+        android:textColorLink="#000011"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnCall_Donhang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnCall_Mathang"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp"
+        android:background="#FF9900"
+        android:text="Đơn hàng"
+        android:textColorLink="#000011"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="CHỨC NĂNG CHÍNH"
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>
+

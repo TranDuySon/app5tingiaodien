@@ -1,3 +1,4 @@
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,6 +10,7 @@
     tools:context="com.example.quan_ly_don_hang.TaoDonHangActivity" >
 
     <LinearLayout
+        android:id="@+id/linearLayout1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -18,14 +20,16 @@
             android:id="@+id/txtTest"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="Thành tiền" />
 
         <Button
             android:id="@+id/btnThanhtoan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:width="120dp"
+            android:textStyle="bold"
+    		android:background="#FF9900"
             android:text="Thanh toán" />
-
     </LinearLayout>
 
     <ListView
@@ -33,7 +37,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true" >
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="16dp" >
+
     </ListView>
 
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="CHỌN SẢN PHẨM"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
 </RelativeLayout>
+

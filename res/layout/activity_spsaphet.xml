@@ -6,15 +6,52 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#CCFFFF"
     tools:context="com.example.quan_ly_don_hang.SPsaphetActivity" >
 
     <ListView
         android:id="@+id/lv_sphh"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="37dp" >
+        android:layout_marginTop="99dp" >
+
     </ListView>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lv_sphh"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="SẢN PHẨM SẮP HẾT"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lv_sphh"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="56dp"
+        android:text="Tên sản phẩm"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignRight="@+id/lv_sphh"
+        android:layout_marginRight="59dp"
+        android:text="Số lượng"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>

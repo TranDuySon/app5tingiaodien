@@ -6,14 +6,18 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+       android:background="#CCFFFF"
     tools:context="com.example.quan_ly_don_hang.QLSanPhamActivity" >
 
     <ListView
         android:id="@+id/lv_SP"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
         android:layout_marginBottom="86dp"
-        android:layout_marginLeft="28dp" >
+        android:layout_marginTop="50dp" >
+
     </ListView>
 
     <ImageButton
@@ -22,7 +26,21 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/lv_SP"
+        
         android:layout_marginBottom="25dp"
         android:src="@drawable/add" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lv_SP"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/lv_SP"
+        android:layout_marginRight="21dp"
+        android:gravity="center"
+        android:text="TẤT CẢ SẢN PHẨM"
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>
