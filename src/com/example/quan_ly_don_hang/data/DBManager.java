@@ -131,12 +131,26 @@ public class DBManager extends SQLiteOpenHelper {
 			db.close();
 			return true;
 		}
+		
 
 		db.close();
 		return false;
 
 	}
+	public boolean checkcouser() {
+		db = this.getReadableDatabase();
+		String query = "Select * from " + TABLE_USER;
+		Cursor cursor = db.rawQuery(query, null);
+		if (cursor.getCount() >= 1) {
+			db.close();
+			return true;
+		}
+		
 
+		db.close();
+		return false;
+
+	}
 	// hàm tạo danh mục
 	public void addDanhmuc(DanhMuc dm) {
 		SQLiteDatabase db = this.getWritableDatabase();

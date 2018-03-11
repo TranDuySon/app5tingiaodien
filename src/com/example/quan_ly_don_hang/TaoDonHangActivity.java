@@ -69,18 +69,22 @@ public class TaoDonHangActivity extends Activity {
 				String ten = textview3.getText().toString().trim();
 				int text = Integer.parseInt(textview.getText().toString());
 				int soluongsp = Integer.parseInt(textview2.getText().toString());
+				
+				if(soluongsp>0){
 				tongtien = tongtien + text;
 				
 				solanchon(arg2);
 				tenchon(arg2, ten);
 				dongiasp(arg2, text);
 				int sll = soluongsp - 1;
-				
+				textview2.setText(String.valueOf(sll));
 				String sl = String.valueOf(slsp[arg2]);
 				Toast.makeText(getApplicationContext(), sl, Toast.LENGTH_SHORT)
 						.show();
+				} else {Toast.makeText(TaoDonHangActivity.this, "Hết hàng!", Toast.LENGTH_SHORT).show();}
+				
 				txttest.setText(String.valueOf(tongtien));
-				textview2.setText(String.valueOf(sll));
+				
 			}
 		});
 		Purchase.setOnClickListener(new View.OnClickListener() {

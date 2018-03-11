@@ -28,6 +28,9 @@ public class Frm_Login extends Activity {
 		btnDangnhap = (Button) findViewById(R.id.btnLogin);
 		edtuser = (EditText) findViewById(R.id.txtUsername_Login);
 		edtpass = (EditText) findViewById(R.id.txtPassword_Login);
+		if (dbmanager.checkcouser()){
+			btnDangky.setVisibility(View.INVISIBLE);
+		}
 		btnDangky.setOnClickListener(new View.OnClickListener() {
 
 			@Override

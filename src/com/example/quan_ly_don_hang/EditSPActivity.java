@@ -9,6 +9,8 @@ import com.example.quan_ly_don_hang.data.DBManager;
 import com.example.quan_ly_don_hang.model.SanPham;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -25,6 +27,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 public class EditSPActivity extends Activity {
 SanPham sanpham;
@@ -54,15 +57,17 @@ int REQUEST_CODE_FOLDER = 352;
 		db = new DBManager(this);
 		getData();
 		loadSpinner();
-		danhmucchon = spn.getSelectedItem().toString().trim();
+		
 		btnedit.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
+				danhmucchon = spn.getSelectedItem().toString().trim();
 				db.EditSanPham(a, edtten.getText().toString(), danhmucchon, Integer.parseInt(edtsoluong.getText().toString()), Integer.parseInt(edtgia.getText().toString()), ConverttoArrayByte(imgAvatar));
 				Intent inten = new Intent(getApplicationContext(), QLSanPhamActivity.class);
 				startActivity(inten);
+				Toast.makeText(EditSPActivity.this, "Sửa hàng thành công!", Toast.LENGTH_SHORT).show();
 			}
 		});
 		btndel.setOnClickListener(new View.OnClickListener() {
@@ -70,9 +75,25 @@ int REQUEST_CODE_FOLDER = 352;
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-			db.DeleteSanPham(a);
-			Intent intentt = new Intent(getApplicationContext(), QLSanPhamActivity.class);
-			startActivity(intentt);
+				AlertDialog.Builder dialog =	new AlertDialog.Builder(EditSPActivity.this);
+				dialog.setTitle("XÓA SẢN PHẨM NÀY?");
+				dialog.setMessage("Bạn thật sự muốn xóa sản phẩm này?");
+					dialog.setPositiveButton("XÓA", new DialogInterface.OnClickListener() {
+						
+						@Override
+						public void onClick(DialogInterface arg0, int arg1) {
+							// TODO Auto-generated method stub
+							Intent intentt = new Intent(getApplicationContext(), QLSanPhamActivity.class);
+							startActivity(intentt);
+							db.DeleteSanPham(a);
+							
+							Toast.makeText(EditSPActivity.this, "Đã xóa!", Toast.LENGTH_SHORT).show();
+						}
+					}).setNegativeButton("Hủy", null).show();
+			//db.DeleteSanPham(a);
+			//Intent intentt = new Intent(getApplicationContext(), QLSanPhamActivity.class);
+			//startActivity(intentt);
+			//Toast.makeText(EditSPActivity.this, "Đã xóa!", Toast.LENGTH_SHORT).show();
 			}
 		});
 		

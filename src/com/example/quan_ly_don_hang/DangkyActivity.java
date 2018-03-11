@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class DangkyActivity extends Activity {
 	DBManager dbManager;
@@ -34,9 +35,10 @@ public class DangkyActivity extends Activity {
 				Users users = createUser();
 				if (users != null) {
 					dbManager.adduser(users);
-
+					Toast.makeText(DangkyActivity.this, "Tạo tài khoản thành công!", Toast.LENGTH_SHORT).show();
 				}
 			}
+			
 		});
 
 	}

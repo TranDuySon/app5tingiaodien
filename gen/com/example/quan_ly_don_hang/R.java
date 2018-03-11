@@ -69,14 +69,14 @@ public final class R {
         public static final int lv_cthd=0x7f080000;
         public static final int lv_hd=0x7f080015;
         public static final int lv_sphh=0x7f080020;
-        public static final int progressBar1=0x7f080016;
+        public static final int progressBar1=0x7f080017;
         public static final int spinnerDM=0x7f080027;
         public static final int spinnerDM_EditSP=0x7f080009;
+        public static final int textView1=0x7f080016;
         public static final int textView3=0x7f080035;
         public static final int textView5=0x7f080037;
         public static final int textView7=0x7f080039;
         public static final int tv_Gia_themhang=0x7f080029;
-        public static final int tv_ID=0x7f080017;
         public static final int tv_Idd=0x7f08003b;
         public static final int tv_ctsp=0x7f080034;
         public static final int tv_cttien=0x7f08003a;
