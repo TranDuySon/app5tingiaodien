@@ -16,7 +16,7 @@ public class DangkyActivity extends Activity {
 	DBManager dbManager;
 	EditText txtUsername;
 	EditText txtPassword;
-	Button btnSave;
+	Button btnSave, btnClear;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +25,7 @@ public class DangkyActivity extends Activity {
 		dbManager = new DBManager(this);
 		txtUsername = (EditText) findViewById(R.id.txtUsername_User);
 		txtPassword = (EditText) findViewById(R.id.txtPassword_User);
+		btnClear = (Button)findViewById(R.id.btnGiamgia);
 		btnSave = (Button) findViewById(R.id.btnLogin);
 
 		btnSave.setOnClickListener(new View.OnClickListener() {
@@ -39,6 +40,15 @@ public class DangkyActivity extends Activity {
 				}
 			}
 			
+		});
+		btnClear.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				txtUsername.setText(" ");
+				txtPassword.setText(" ");
+			}
 		});
 
 	}
