@@ -253,6 +253,11 @@ db.close();
 		statement.executeInsert();
 		db.close();
 	}
+	public Cursor Thongke(String i) {
+		SQLiteDatabase db = this.getReadableDatabase();
+		Cursor cursor = db.rawQuery(" select SanPham, SUM(SoLuong) as Doanhso, SUM(Tien) as Doanhthu from CTHoaDon where SubStr(MaHD,1,10) = ? group by SanPham order by Doanhso desc", null);
+		return cursor;
+	}
 	public void UpdateSanPham(int Soluong, String Tensp){
 		SQLiteDatabase db = getWritableDatabase();
 		String sql  = "UPDATE SanPham SET Soluong= Soluong - ? Where Tensanpham =?";

@@ -8,10 +8,13 @@ import com.example.quan_ly_don_hang.model.ChiTietHoaDon;
 import com.example.quan_ly_don_hang.model.HoaDon;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ListView;
 
 public class ChiTietHDActivity extends Activity {
@@ -22,14 +25,17 @@ public class ChiTietHDActivity extends Activity {
 	ListView lv;
 	String mhd;
 HoaDon hoadon;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_chi_tiet_hd);
 		lv = (ListView)findViewById(R.id.lv_cthd);
+		
 		db = new DBManager(this);
 		getData();
 		display();
+		
 		
 	}
 	public void getData(){

@@ -75,6 +75,15 @@
         android:textStyle="bold"
         android:width="320dp" />
 
+    <ImageButton
+        android:id="@+id/ibtnbacksanpham"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnGiamgia"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="52dp"
+        android:src="@drawable/back" />
+
 </RelativeLayout>
 
 

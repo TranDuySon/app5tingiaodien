@@ -4,6 +4,7 @@ import com.example.quan_ly_don_hang.data.DBManager;
 import com.example.quan_ly_don_hang.model.Users;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -37,6 +38,8 @@ public class DangkyActivity extends Activity {
 				if (users != null) {
 					dbManager.adduser(users);
 					Toast.makeText(DangkyActivity.this, "Tạo tài khoản thành công!", Toast.LENGTH_SHORT).show();
+					Intent in = new Intent(getApplicationContext(), Frm_Login.class);
+					startActivity(in);
 				}
 			}
 			

@@ -43,4 +43,13 @@
         android:textSize="25sp"
         android:textStyle="bold" />
 
+    <ImageButton
+        android:id="@+id/ibtnQlspback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ibnThemHang"
+        android:layout_alignLeft="@+id/lv_SP"
+        android:layout_marginBottom="14dp"
+        android:src="@drawable/back" />
+
 </RelativeLayout>

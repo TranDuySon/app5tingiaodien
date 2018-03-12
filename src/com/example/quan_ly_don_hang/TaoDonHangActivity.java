@@ -11,6 +11,7 @@ import com.example.quan_ly_don_hang.model.SanPham;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.util.SparseBooleanArray;
@@ -79,8 +80,8 @@ public class TaoDonHangActivity extends Activity {
 				int sll = soluongsp - 1;
 				textview2.setText(String.valueOf(sll));
 				String sl = String.valueOf(slsp[arg2]);
-				Toast.makeText(getApplicationContext(), sl, Toast.LENGTH_SHORT)
-						.show();
+				//Toast.makeText(getApplicationContext(), sl, Toast.LENGTH_SHORT)
+						//.show();
 				} else {Toast.makeText(TaoDonHangActivity.this, "Hết hàng!", Toast.LENGTH_SHORT).show();}
 				
 				txttest.setText(String.valueOf(tongtien));
@@ -105,6 +106,8 @@ public class TaoDonHangActivity extends Activity {
 							dbmanager.UpdateSanPham(slsp[i], tenspchon[i]);
 							dbmanager.ThemCTHoaDon(ngay, tenspchon[i], slsp[i], dongia[i], slsp[i]*dongia[i]);
 							Toast.makeText(TaoDonHangActivity.this, "Giao dịch thành công!", Toast.LENGTH_SHORT).show();
+							Intent intenttt = new Intent(getApplicationContext(), Trangquanly.class);
+							startActivity(intenttt);
 						}
 					}
 				}).setNegativeButton("Hủy", null).show();

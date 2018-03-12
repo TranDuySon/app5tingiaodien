@@ -110,6 +110,7 @@
         android:id="@+id/imgHinh"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:scaleType="fitXY"
         android:layout_below="@+id/linearLayout1"
         android:layout_centerHorizontal="true"
         android:layout_weight="5.82"

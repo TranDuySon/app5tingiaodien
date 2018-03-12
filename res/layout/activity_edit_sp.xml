@@ -135,6 +135,7 @@
         android:id="@+id/imgHinh_EditSP"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:scaleType="fitXY"
         android:layout_alignLeft="@+id/linearLayout2"
         android:layout_alignRight="@+id/linearLayout1"
         android:layout_below="@+id/linearLayout1"
@@ -155,6 +156,14 @@
         android:text="QUẢN LÝ SẢN PHẨM"
         android:textSize="25sp"
         android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/ibtnBack3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_alignTop="@+id/linearLayout1"
+        android:src="@drawable/back" />
 
 </RelativeLayout>
 

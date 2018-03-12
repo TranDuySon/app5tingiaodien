@@ -49,7 +49,7 @@
         android:layout_alignBaseline="@+id/textView2"
         android:layout_alignBottom="@+id/textView2"
         android:layout_alignRight="@+id/lv_sphh"
-        android:layout_marginRight="59dp"
+        android:gravity="right"
         android:text="Số lượng"
         android:textSize="18sp"
         android:textStyle="bold" />

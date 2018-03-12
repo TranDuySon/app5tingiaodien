@@ -22,12 +22,13 @@ import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 
 public class QLSanPhamActivity extends Activity {
-	ImageButton ibtAddnewSP;
+	ImageButton ibtAddnewSP, ibtnback;
 	ArrayList<SanPham> arraySanpham = new ArrayList<SanPham>();
 	SanPhamAdapter adapter;
 	Cursor cursor;
 	DBManager dbmanager;
 	ListView lv;
+	
 	
 
 	@Override
@@ -36,8 +37,18 @@ public class QLSanPhamActivity extends Activity {
 		setContentView(R.layout.activity_qlsan_pham);
 		lv = (ListView)findViewById(R.id.lv_SP);
 		ibtAddnewSP = (ImageButton)findViewById(R.id.ibnThemHang);
+		ibtnback=(ImageButton)findViewById(R.id.ibtnQlspback);
 		dbmanager = new DBManager(this);
 		displaySP();
+		ibtnback.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				Intent i = new Intent(getApplicationContext(), SanPhamActivity.class);
+				startActivity(i);	
+			}
+		});
 		lv.setOnItemClickListener(new OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,

@@ -36,7 +36,7 @@ ImageView imgAvatar;
 DBManager db;
 Spinner spn;
 String danhmucchon;
-ImageButton btncamera, btnfolder;
+ImageButton btncamera, btnfolder, ibtnback;
 Button btnedit, btndel;
 int a;
 int REQUEST_CODE_CAMERA = 454;
@@ -53,11 +53,20 @@ int REQUEST_CODE_FOLDER = 352;
 		btnfolder = (ImageButton)findViewById(R.id.ibnFolder_EditSP);
 		btnedit = (Button)findViewById(R.id.btnEdit_ThemSP_EditSP);
 		btndel = (Button)findViewById(R.id.btnDelete_EditSP);
+		ibtnback = (ImageButton)findViewById(R.id.ibtnBack3);
 		imgAvatar = (ImageView)findViewById(R.id.imgHinh_EditSP);
 		db = new DBManager(this);
 		getData();
 		loadSpinner();
-		
+		ibtnback.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				Intent i = new Intent(getApplicationContext(),QLSanPhamActivity.class);
+				startActivity(i);
+			}
+		});
 		btnedit.setOnClickListener(new View.OnClickListener() {
 			
 			@Override

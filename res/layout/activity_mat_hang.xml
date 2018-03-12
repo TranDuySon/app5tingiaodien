@@ -9,6 +9,7 @@
     tools:context="com.example.quan_ly_don_hang.MatHang" >
 
     <LinearLayout
+        android:id="@+id/linearLayout1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical" >
@@ -28,7 +29,6 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10" />
-
         </LinearLayout>
 
         <LinearLayout
@@ -47,7 +47,6 @@
 
                 <requestFocus />
             </EditText>
-
         </LinearLayout>
 
         <LinearLayout
@@ -68,7 +67,6 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:inputType="numberDecimal" />
-
         </LinearLayout>
 
         <LinearLayout
@@ -87,10 +85,7 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:inputType="numberDecimal" />
-
         </LinearLayout>
-
     </LinearLayout>
 
 </RelativeLayout>
-

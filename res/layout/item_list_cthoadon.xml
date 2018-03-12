@@ -39,7 +39,7 @@
             android:id="@+id/ctsl"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="60dp"
+            android:paddingLeft="67dp"
             android:text="TextView" />
 
     </LinearLayout>

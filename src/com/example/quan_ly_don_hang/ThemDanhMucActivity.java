@@ -11,13 +11,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 public class ThemDanhMucActivity extends Activity {
 	DBManager dbManager;
 	EditText txtThemDM;
 	Button btnLuu;
-
+ImageButton ibtnback;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -25,6 +26,16 @@ public class ThemDanhMucActivity extends Activity {
 		dbManager = new DBManager(this);
 		txtThemDM = (EditText) findViewById(R.id.txtTenSP_ThemSP);
 		btnLuu = (Button) findViewById(R.id.btnSaveDM);
+		ibtnback = (ImageButton)findViewById(R.id.ibtnbackthemdm);
+		ibtnback.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				
+			}
+		});
+		
 		btnLuu.setOnClickListener(new View.OnClickListener() {
 			
 			@Override

@@ -70,4 +70,13 @@
         android:textStyle="bold"
         android:width="120dp" />
 
+    <ImageButton
+        android:id="@+id/ibtnbackthemdm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtTenSP_ThemSP"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="61dp"
+        android:src="@drawable/back" />
+
 </RelativeLayout>

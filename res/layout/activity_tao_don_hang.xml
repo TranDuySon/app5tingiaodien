@@ -20,7 +20,7 @@
             android:id="@+id/txtTest"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Thành tiền" />
+            android:text="0 đồng" />
 
         <Button
             android:id="@+id/btnThanhtoan"
@@ -28,6 +28,7 @@
             android:layout_height="wrap_content"
             android:width="120dp"
             android:textStyle="bold"
+          
     		android:background="#FF9900"
             android:text="Thanh toán" />
     </LinearLayout>

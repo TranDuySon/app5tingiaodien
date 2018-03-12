@@ -7,11 +7,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class SanPhamActivity extends Activity {
 	Button btnDanhMuc;
 	Button btnSanPham;
 	Button btnSanphamsaphet;
+	ImageButton ibtnback;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +22,16 @@ public class SanPhamActivity extends Activity {
 		btnDanhMuc = (Button)findViewById(R.id.btnDanhMuc_SanPham);
 		btnSanPham = (Button)findViewById(R.id.btnSanPham_SP);
 		btnSanphamsaphet = (Button)findViewById(R.id.btnGiamgia);
+		ibtnback = (ImageButton)findViewById(R.id.ibtnbacksanpham);
+		ibtnback.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				Intent i = new Intent(getApplicationContext(), Trangquanly.class);
+				startActivity(i);
+			}
+		});
 		btnDanhMuc.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
