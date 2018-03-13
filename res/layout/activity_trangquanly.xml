@@ -17,7 +17,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="42dp"
         android:background="#FF9900"
-        android:text="Chăm sóc khách hàng"
+        android:text="Thống kê kinh doanh"
         android:textColorLink="#000011"
         android:textSize="20sp"
         android:textStyle="bold" />
