@@ -12,6 +12,7 @@ public class Trangquanly extends Activity {
 Button btnMathang;
 Button btnDonhang;
 Button btnHoadon;
+Button btnThongke;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -19,6 +20,7 @@ Button btnHoadon;
 		btnDonhang = (Button)findViewById(R.id.btnCall_Donhang);
 		btnMathang = (Button)findViewById(R.id.btnCall_Mathang);
 		btnHoadon = (Button)findViewById(R.id.btnCall_Hoadon);
+		btnThongke = (Button)findViewById(R.id.btnCall_CSKH);
 		btnMathang.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
@@ -44,6 +46,15 @@ Button btnHoadon;
 				// TODO Auto-generated method stub
 				Intent i = new Intent (getApplicationContext(), HoaDonActivity.class);
 				startActivity(i);
+			}
+		});
+		btnThongke.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				Intent t = new Intent (getApplicationContext(), ThongkeActivity.class);
+				startActivity(t);
 			}
 		});
 	}

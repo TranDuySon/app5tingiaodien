@@ -20,5 +20,6 @@
     <string name="title_activity_edit_sp">EditSPActivity</string>
     <string name="title_activity_chi_tiet_hd">ChiTietHDActivity</string>
     <string name="title_activity_spsaphet">SPsaphetActivity</string>
+    <string name="title_activity_thongke">ThongkeActivity</string>
 
 </resources>

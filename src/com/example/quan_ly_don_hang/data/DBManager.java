@@ -255,7 +255,8 @@ db.close();
 	}
 	public Cursor Thongke(String i) {
 		SQLiteDatabase db = this.getReadableDatabase();
-		Cursor cursor = db.rawQuery(" select SanPham, SUM(SoLuong) as Doanhso, SUM(Tien) as Doanhthu from CTHoaDon where SubStr(MaHD,1,10) = ? group by SanPham order by Doanhso desc", null);
+		String sql = "select CTHoaDon.SanPham, SUM(CTHoaDon.SoLuong) as Doanhso, SUM(CTHoaDon.Tien) as Doanhthu from CTHoaDon inner join HoaDon on HoaDon._id = CTHoaDon.MaHD where SubStr(HoaDon.Ngay,1,10) = '" + i + "' group by CTHoaDon.SanPham order by Doanhso desc";
+		Cursor cursor = db.rawQuery(sql, null);
 		return cursor;
 	}
 	public String LayMaHD(){
@@ -305,6 +306,13 @@ db.close();
 		
 		Calendar cal = Calendar.getInstance();
 		SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy_HH:mm:ss");
+		String date = df.format(cal.getTime());
+		return date;
+	}
+public String ngay(){
+		
+		Calendar cal = Calendar.getInstance();
+		SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
 		String date = df.format(cal.getTime());
 		return date;
 	}

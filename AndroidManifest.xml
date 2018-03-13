@@ -88,6 +88,10 @@
             android:name=".SPsaphetActivity"
             android:label="@string/title_activity_spsaphet" >
         </activity>
+        <activity
+            android:name=".ThongkeActivity"
+            android:label="@string/title_activity_thongke" >
+        </activity>
     </application>
 
 </manifest>

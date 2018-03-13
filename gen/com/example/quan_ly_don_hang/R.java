@@ -33,11 +33,12 @@ public final class R {
     }
     public static final class id {
         public static final int TextView01=0x7f080022;
-        public static final int action_settings=0x7f08004c;
-        public static final int btnCall_CSKH=0x7f080038;
-        public static final int btnCall_Donhang=0x7f08003b;
-        public static final int btnCall_Hoadon=0x7f08003a;
-        public static final int btnCall_Mathang=0x7f080039;
+        public static final int action_settings=0x7f080056;
+        public static final int btnCall_CSKH=0x7f08003c;
+        public static final int btnCall_Donhang=0x7f08003f;
+        public static final int btnCall_Hoadon=0x7f08003e;
+        public static final int btnCall_Mathang=0x7f08003d;
+        public static final int btnChonngay=0x7f080039;
         public static final int btnDanhMuc_SanPham=0x7f080027;
         public static final int btnDelete_EditSP=0x7f080013;
         public static final int btnEdit_ThemSP_EditSP=0x7f080014;
@@ -48,8 +49,9 @@ public final class R {
         public static final int btnSanPham_SP=0x7f080028;
         public static final int btnSaveDM=0x7f08002f;
         public static final int btnThanhtoan=0x7f08002d;
-        public static final int ctdongia=0x7f08003f;
-        public static final int ctsl=0x7f08003d;
+        public static final int btnthongke=0x7f08003a;
+        public static final int ctdongia=0x7f080043;
+        public static final int ctsl=0x7f080041;
         public static final int editText3=0x7f080024;
         public static final int editText4=0x7f080020;
         public static final int ibnCamera=0x7f080034;
@@ -65,14 +67,15 @@ public final class R {
         public static final int ibtnbackthemdm=0x7f080030;
         public static final int imageView1=0x7f08001e;
         public static final int imageView2=0x7f08001f;
-        public static final int imgAnhSP=0x7f080047;
+        public static final int imgAnhSP=0x7f08004b;
         public static final int imgHinh=0x7f080037;
         public static final int imgHinh_EditSP=0x7f080015;
         public static final int linearLayout1=0x7f080004;
         public static final int linearLayout2=0x7f080012;
-        public static final int lv_Danhmuc=0x7f080049;
+        public static final int lis_thongkesp=0x7f08003b;
+        public static final int lv_Danhmuc=0x7f08004d;
         public static final int lv_SP=0x7f080009;
-        public static final int lv_Soluong=0x7f080048;
+        public static final int lv_Soluong=0x7f08004c;
         public static final int lv_chonsp=0x7f08002e;
         public static final int lv_cthd=0x7f080000;
         public static final int lv_hd=0x7f08001b;
@@ -81,27 +84,32 @@ public final class R {
         public static final int spinnerDM=0x7f080031;
         public static final int spinnerDM_EditSP=0x7f08000d;
         public static final int textView1=0x7f080001;
+        public static final int textView10=0x7f080054;
         public static final int textView2=0x7f08001d;
         public static final int textView3=0x7f08002b;
-        public static final int textView5=0x7f08003e;
-        public static final int textView7=0x7f080040;
+        public static final int textView4=0x7f080050;
+        public static final int textView5=0x7f080042;
+        public static final int textView7=0x7f080044;
+        public static final int textView8=0x7f080052;
         public static final int tv_ID=0x7f080005;
-        public static final int tv_Idd=0x7f080042;
+        public static final int tv_Idd=0x7f080046;
         public static final int tv_Name=0x7f080007;
-        public static final int tv_ctsp=0x7f08003c;
-        public static final int tv_cttien=0x7f080041;
+        public static final int tv_ctsp=0x7f080040;
+        public static final int tv_cttien=0x7f080045;
         public static final int tv_giasp_list=0x7f08001a;
-        public static final int tv_idhd=0x7f080044;
-        public static final int tv_ngayhd=0x7f080045;
-        public static final int tv_shsl=0x7f08004b;
-        public static final int tv_shten=0x7f08004a;
-        public static final int tv_tend=0x7f080043;
+        public static final int tv_idhd=0x7f080048;
+        public static final int tv_ngayhd=0x7f080049;
+        public static final int tv_shsl=0x7f08004f;
+        public static final int tv_shten=0x7f08004e;
+        public static final int tv_tend=0x7f080047;
         public static final int tv_tensp_list=0x7f080032;
-        public static final int tv_thanhtienhd=0x7f080046;
+        public static final int tv_thanhtienhd=0x7f08004a;
         public static final int txtGiaca_ThemSP=0x7f080033;
         public static final int txtGiaca_ThemSP_EditSP=0x7f08000f;
+        public static final int txtNgay=0x7f080038;
         public static final int txtPassword_Login=0x7f080018;
         public static final int txtPassword_User=0x7f080008;
+        public static final int txtSP_thongke=0x7f080051;
         public static final int txtSoluong_ThemSP=0x7f080023;
         public static final int txtSoluong_ThemSP_EditSP=0x7f08000e;
         public static final int txtTenSP_EditSP=0x7f08000c;
@@ -109,6 +117,8 @@ public final class R {
         public static final int txtTest=0x7f08002c;
         public static final int txtUsername_Login=0x7f080017;
         public static final int txtUsername_User=0x7f080006;
+        public static final int txtdoanhso_thongke=0x7f080053;
+        public static final int txtdoanhthu_thongke=0x7f080055;
     }
     public static final class layout {
         public static final int activity_chi_tiet_hd=0x7f030000;
@@ -127,12 +137,14 @@ public final class R {
         public static final int activity_them_danh_muc=0x7f03000d;
         public static final int activity_them_giam_gia=0x7f03000e;
         public static final int activity_them_hang=0x7f03000f;
-        public static final int activity_trangquanly=0x7f030010;
-        public static final int item_list_cthoadon=0x7f030011;
-        public static final int item_list_danhmuc=0x7f030012;
-        public static final int item_list_hoadon=0x7f030013;
-        public static final int item_list_sanpham=0x7f030014;
-        public static final int item_list_spsh=0x7f030015;
+        public static final int activity_thongke=0x7f030010;
+        public static final int activity_trangquanly=0x7f030011;
+        public static final int item_list_cthoadon=0x7f030012;
+        public static final int item_list_danhmuc=0x7f030013;
+        public static final int item_list_hoadon=0x7f030014;
+        public static final int item_list_sanpham=0x7f030015;
+        public static final int item_list_spsh=0x7f030016;
+        public static final int list_item_thongke=0x7f030017;
     }
     public static final class menu {
         public static final int chi_tiet_hd=0x7f070000;
@@ -151,7 +163,8 @@ public final class R {
         public static final int them_danh_muc=0x7f07000d;
         public static final int them_giam_gia=0x7f07000e;
         public static final int them_hang=0x7f07000f;
-        public static final int trangquanly=0x7f070010;
+        public static final int thongke=0x7f070010;
+        public static final int trangquanly=0x7f070011;
     }
     public static final class string {
         public static final int action_settings=0x7f050002;
@@ -172,6 +185,7 @@ public final class R {
         public static final int title_activity_them_danh_muc=0x7f05000b;
         public static final int title_activity_them_giam_gia=0x7f05000d;
         public static final int title_activity_them_hang=0x7f050009;
+        public static final int title_activity_thongke=0x7f050013;
         public static final int title_activity_trangquanly=0x7f050005;
     }
     public static final class style {
