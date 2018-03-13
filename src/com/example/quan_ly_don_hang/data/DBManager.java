@@ -258,6 +258,16 @@ db.close();
 		Cursor cursor = db.rawQuery(" select SanPham, SUM(SoLuong) as Doanhso, SUM(Tien) as Doanhthu from CTHoaDon where SubStr(MaHD,1,10) = ? group by SanPham order by Doanhso desc", null);
 		return cursor;
 	}
+	public String LayMaHD(){
+		SQLiteDatabase db = this.getReadableDatabase();
+		Cursor cursor = db.rawQuery("select count(*) from HoaDon", null);
+		String str = null;
+		if (cursor.moveToFirst()) {
+		   str = cursor.getString(cursor.getColumnIndex("count(*)"));
+		   
+		}
+		return str;
+	}
 	public void UpdateSanPham(int Soluong, String Tensp){
 		SQLiteDatabase db = getWritableDatabase();
 		String sql  = "UPDATE SanPham SET Soluong= Soluong - ? Where Tensanpham =?";
@@ -294,7 +304,7 @@ db.close();
 	public String ngaythang(){
 		
 		Calendar cal = Calendar.getInstance();
-		SimpleDateFormat df = new SimpleDateFormat("ddMMyyyyHHmmss");
+		SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy_HH:mm:ss");
 		String date = df.format(cal.getTime());
 		return date;
 	}

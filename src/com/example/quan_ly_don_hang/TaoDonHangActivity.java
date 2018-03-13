@@ -102,9 +102,10 @@ public class TaoDonHangActivity extends Activity {
 					public void onClick(DialogInterface arg0, int arg1) {
 						// TODO Auto-generated method stub
 						dbmanager.ThemHoaDon(ngay, tongtien);
+						String mahd = String.valueOf(dbmanager.LayMaHD());
 						for (int i = 0; i < sosanpham; i++) {
 							dbmanager.UpdateSanPham(slsp[i], tenspchon[i]);
-							dbmanager.ThemCTHoaDon(ngay, tenspchon[i], slsp[i], dongia[i], slsp[i]*dongia[i]);
+							dbmanager.ThemCTHoaDon(mahd, tenspchon[i], slsp[i], dongia[i], slsp[i]*dongia[i]);
 							Toast.makeText(TaoDonHangActivity.this, "Giao dịch thành công!", Toast.LENGTH_SHORT).show();
 							Intent intenttt = new Intent(getApplicationContext(), Trangquanly.class);
 							startActivity(intenttt);

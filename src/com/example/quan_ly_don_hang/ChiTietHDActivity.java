@@ -41,7 +41,7 @@ HoaDon hoadon;
 	public void getData(){
 		if (getIntent().getExtras()!=null){
 			hoadon = (HoaDon) getIntent().getSerializableExtra("CTHD");
-			mhd = String.valueOf(hoadon.getmNgay());
+			mhd = String.valueOf(hoadon.getmMaHD());
 		}
 	}
 	public void display(){
