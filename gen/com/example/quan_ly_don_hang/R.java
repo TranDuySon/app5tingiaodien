@@ -58,11 +58,11 @@ public final class R {
         public static final int ibnCamera_EditSP=0x7f080013;
         public static final int ibnFolder=0x7f080036;
         public static final int ibnFolder_EditSP=0x7f080014;
-        public static final int ibnThemHang=0x7f080026;
+        public static final int ibnThemHang=0x7f080027;
         public static final int ibtnAddDM=0x7f08000c;
         public static final int ibtnBack3=0x7f080018;
         public static final int ibtnBacksp=0x7f08000d;
-        public static final int ibtnQlspback=0x7f080027;
+        public static final int ibtnQlspback=0x7f080026;
         public static final int ibtnbacksanpham=0x7f08002a;
         public static final int ibtnbackthemdm=0x7f080031;
         public static final int imageView1=0x7f08001f;

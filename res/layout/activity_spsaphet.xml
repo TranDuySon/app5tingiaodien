@@ -26,8 +26,8 @@
         android:layout_alignLeft="@+id/lv_sphh"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:text="SẢN PHẨM SẮP HẾT"
         android:gravity="center"
+        android:text="SỐ LƯỢNG SẢN PHẨM"
         android:textSize="25sp"
         android:textStyle="bold" />
 

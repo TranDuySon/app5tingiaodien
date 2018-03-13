@@ -10,6 +10,7 @@
     tools:context="com.example.quan_ly_don_hang.QLSanPhamActivity" >
 
     <LinearLayout
+        android:id="@+id/linearLayout1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -25,7 +26,6 @@
                 android:id="@+id/textView1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                
                 android:gravity="center"
                 android:text="TẤT CẢ SẢN PHẨM"
                 android:textSize="25sp"
@@ -42,24 +42,24 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:weightSum="2" >
-
-            <ImageButton
-                android:id="@+id/ibtnQlspback"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:src="@drawable/back" />
-
-            <ImageButton
-                android:id="@+id/ibnThemHang"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:src="@drawable/add" />
+            android:layout_height="wrap_content" >
         </LinearLayout>
-
     </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/ibtnQlspback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/back" />
+
+    <ImageButton
+        android:id="@+id/ibnThemHang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:src="@drawable/add" />
 
 </RelativeLayout>
