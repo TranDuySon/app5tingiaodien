@@ -73,7 +73,12 @@ public void showDatePicker(){
 		@Override
 		public void onDateSet(DatePicker arg0, int arg1, int arg2, int arg3) {
 			// TODO Auto-generated method stub
-			edtngay.setText(arg3 + "/" + (arg2 + 1) + "/" + arg1);
+			if(arg3<=9&&arg2<=8){edtngay.setText("0"+ arg3 + "/" + "0"+ (arg2 + 1) + "/" + arg1);};
+			if(arg3<=9&&arg2>8){edtngay.setText("0"+ arg3 + "/" + (arg2 + 1) + "/" + arg1);};
+			if(arg3>9&&arg2>8){edtngay.setText(arg3 + "/" + (arg2 + 1) + "/" + arg1);};
+			if(arg3>9&&arg2<=8){edtngay.setText(arg3 + "/"  + "0" + (arg2 + 1) + "/" + arg1);};
+			
+			//edtngay.setText(arg3 + "/" + (arg2 + 1) + "/" + arg1);
 		}
 	};
 	String s=edtngay.getText().toString().trim();
@@ -81,7 +86,7 @@ public void showDatePicker(){
 	 int ngay=Integer.parseInt(strArrtmp[0]);
 	 int thang=Integer.parseInt(strArrtmp[1])-1;
 	 int nam=Integer.parseInt(strArrtmp[2]);
-	DatePickerDialog pic = new DatePickerDialog(this, callback, nam, thang, ngay + 1);
+	DatePickerDialog pic = new DatePickerDialog(this, callback, nam, thang, ngay);
 	pic.setTitle("Chọn ngày cần thống kê");
 	 pic.show();
 }
