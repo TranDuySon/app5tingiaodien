@@ -8,43 +8,38 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.quan_ly_don_hang.ThongkeActivity" >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Chọn ngày" />
-
     <EditText
         android:id="@+id/txtNgay"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_below="@+id/textView1"
         android:layout_marginTop="56dp"
         android:ems="10" />
 
     <Button
         android:id="@+id/btnChonngay"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_below="@+id/textView1"
-        android:text="Chọn ngày" />
+        android:text="Chọn ngày"
+        android:textColorLink="#000011"
+            android:textStyle="bold"
+    		android:background="#FF9900" />
 
     <Button
         android:id="@+id/btnthongke"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/txtNgay"
         android:layout_below="@+id/txtNgay"
         android:layout_marginTop="18dp"
-        android:text="Thống kê" />
+        android:text="Thống kê"
+        android:textColorLink="#000011"
+            android:textStyle="bold"
+    		android:background="#FF9900" />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical" >
-
     </LinearLayout>
 
     <ListView
