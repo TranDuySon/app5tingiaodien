@@ -33,7 +33,7 @@ public final class R {
     }
     public static final class id {
         public static final int TextView01=0x7f080022;
-        public static final int action_settings=0x7f080056;
+        public static final int action_settings=0x7f080053;
         public static final int btnCall_CSKH=0x7f08003c;
         public static final int btnCall_Donhang=0x7f08003f;
         public static final int btnCall_Hoadon=0x7f08003e;
@@ -84,13 +84,10 @@ public final class R {
         public static final int spinnerDM=0x7f080031;
         public static final int spinnerDM_EditSP=0x7f08000d;
         public static final int textView1=0x7f080001;
-        public static final int textView10=0x7f080054;
         public static final int textView2=0x7f08001d;
         public static final int textView3=0x7f08002b;
-        public static final int textView4=0x7f080050;
         public static final int textView5=0x7f080042;
         public static final int textView7=0x7f080044;
-        public static final int textView8=0x7f080052;
         public static final int tv_ID=0x7f080005;
         public static final int tv_Idd=0x7f080046;
         public static final int tv_Name=0x7f080007;
@@ -109,7 +106,7 @@ public final class R {
         public static final int txtNgay=0x7f080038;
         public static final int txtPassword_Login=0x7f080018;
         public static final int txtPassword_User=0x7f080008;
-        public static final int txtSP_thongke=0x7f080051;
+        public static final int txtSP_thongke=0x7f080050;
         public static final int txtSoluong_ThemSP=0x7f080023;
         public static final int txtSoluong_ThemSP_EditSP=0x7f08000e;
         public static final int txtTenSP_EditSP=0x7f08000c;
@@ -117,8 +114,8 @@ public final class R {
         public static final int txtTest=0x7f08002c;
         public static final int txtUsername_Login=0x7f080017;
         public static final int txtUsername_User=0x7f080006;
-        public static final int txtdoanhso_thongke=0x7f080053;
-        public static final int txtdoanhthu_thongke=0x7f080055;
+        public static final int txtdoanhso_thongke=0x7f080051;
+        public static final int txtdoanhthu_thongke=0x7f080052;
     }
     public static final class layout {
         public static final int activity_chi_tiet_hd=0x7f030000;
